@@ -4,13 +4,14 @@ body {
     font-weight: 150px;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
+    background-color: #F0E68C;
 }
 
 .meal-show-container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 5px;
-    background: white;
+    background:#F0E68C;
     text-align: center;
 }
 
@@ -20,6 +21,7 @@ body {
 
 .meal-search-box {
     display: flex;
+    background-color: #F0E68C;
 }
 
 .search-control, .search-btn {
