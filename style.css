@@ -1,0 +1,185 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-weight: 150px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.meal-show-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 5px;
+    background: white;
+    text-align: center;
+}
+
+.meal-search {
+    margin: 2rem 0;
+}
+
+.meal-search-box {
+    display: flex;
+}
+
+.search-control, .search-btn {
+    width: 100%;
+}
+
+.search-control {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid green;
+    color: black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.search-btn {
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+    background: #008080;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.4s linear;
+}
+
+.search-btn:hover {
+    background: #1E90FF;
+    font-size: 20px;
+}
+
+.meal-item {
+    border-radius: 20px;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    margin: 15px 0;
+}
+
+.meal-img img {
+    width: 100%;
+    display: block;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.meal-name {
+    background-color: white;
+    padding: 1.5rem 0.5rem;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.recipe-btn {
+    text-decoration: none;
+    color: #fff;
+    background: #9ACD32;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 0;
+    display: block;
+    width: 175px;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+
+.recipe-btn:hover {
+    background: #1E90FF;
+    font-size: 20px;
+}
+
+/* meal details */
+
+.meal-details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: #F0F8FF;
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
+    display: none;
+    padding: 30px 0;
+}
+
+/* make this class in javaScript */
+
+.showRecipe {
+    display: block;
+}
+
+.ingredient-close-btn {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 30px;
+    background: #F0E68C;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe-meal-img img {
+    width: 350px;
+    height: 190px;
+    margin: 0 auto;
+    display: block;
+}
+
+.ingredient-detail {
+    background-color: white;
+    width: 350px;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+    color: black;
+    text-align: justify;
+    padding: 5px;
+}
+
+/* make this class in javaScript */
+
+.notFound {
+    grid-template-columns: 1fr!important;
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    width: 100%;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 600px) {
+    .meal-search-box {
+        width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #meal {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .meal-item {
+        margin: 0;
+    }
+    .meal-details {
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #meal {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
